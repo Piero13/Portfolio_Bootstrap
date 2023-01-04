@@ -1,0 +1,23 @@
+.text-light {
+    color: #d9ecf2;
+    font-weight: lighter;
+}
+
+.text-primary {
+    color: #1aa6b7;
+}
+
+.text-secondary {
+    color:#002d40;
+}
+
+$theme-colors: (
+  "primary": #1aa6b7,
+  "secondary":  #002d40,
+  "light":      #d9ecf2,
+  "warning": #e04f5f,
+);
+
+.border-light {
+    border-color: #d9ecf2;
+}

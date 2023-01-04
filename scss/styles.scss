@@ -1,0 +1,255 @@
+@import "variables_overrides.scss";
+@import "utilities_custom.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// base colors
+
+$primary: #1aa6b7;
+$secondary: #002d40;
+$tertiary: #d9ecf2;
+$quaternary: #e04f5f;
+
+// mixins
+
+@mixin bg-gradient-darkblue {
+    background: linear-gradient(to top left, $primary, $secondary);
+}
+
+@mixin bg-gradient-darkblue--reverse {
+    background: linear-gradient(to top left, $secondary, $primary);
+}
+
+@mixin bg-gradient-lightblue {
+    background: linear-gradient(to top left, #1aa6b7aa, #d9ecf2aa);
+}
+
+@mixin bg-gradient-red {
+    background: linear-gradient(to top left, #8a2824, $quaternary);
+}
+
+@mixin primary-border {
+    border: 1px solid $primary;
+}
+
+@mixin secondary-border {
+    border: 1px solid $secondary;
+}
+
+// variables
+
+.bg-gradient-db {
+    @include bg-gradient-darkblue();
+}
+
+.bg-gradient-lb {
+    @include bg-gradient-lightblue
+}
+
+.bd-primary {
+    @include primary-border();
+}
+
+.bd-secondary {
+    @include secondary-border();
+}
+
+// general styles
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background: center / cover no-repeat fixed url("../assets/site-bg.jpg");
+}
+
+// header styles
+
+header {
+    height: 100%;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.hamMenu {
+    width: fit-content;
+    height: fit-content;
+}
+
+.nav-link {
+    width: fit-content;
+    position: relative;
+    padding: 0 10px;
+    margin: 20px;
+    text-decoration: none;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: $quaternary;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        color: $secondary;
+
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+// main
+
+// section welcome
+
+.welcome {
+    position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+
+    &__inset {
+        position: absolute;
+        top: -41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 80px;
+        height: 80px;
+        border: 2px solid $quaternary;
+        border-radius: 50%;
+        box-shadow: 3px 3px 10px $quaternary;
+    }
+
+    &__image {
+        position: absolute;
+        width: 110%;
+        z-index: 2;
+    }
+
+    &__title {
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+//section projects
+
+.bannerCarousel {
+    box-shadow: 3px 3px 10px $secondary;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.carousel-indicators {
+    border: 1px solid $primary;
+    border-radius: 5px;
+
+    & .active {
+        background-color: $quaternary;
+    }
+}
+
+// .carousel-control-next, .carousel-control-prev {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 30px;
+//     height: 30px;
+//     background-color: $quaternary;
+//     border-radius: 50%;
+// }
+
+// .carousel-control-prev {
+//     left: 5%;
+//     top: calc(50% - 15px);
+// }
+
+// .carousel-control-next {
+//     right: 5%;
+//     top: calc(50% - 15px);
+// }
+
+// .carousel-control-next-icon, .carousel-control-prev-icon {
+//     height: 20px;
+// }
+
+.pageLink {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+//section career
+
+.timeline {
+    &__item {
+        box-sizing: border-box;
+    }
+
+    &__vline{
+        position: relative;
+
+        &__chronology {
+            position: absolute;
+            z-index: 2;
+            border-left: 2px solid $quaternary;
+            height: 104px;
+            left: calc(50% - 1px);
+            top: calc(50% - 52px);
+
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: calc(50% - 25px);
+        left: calc(50% - 25px);
+        z-index: 4;
+        border: 2px solid $secondary;
+        box-shadow: 3px 3px 10px $secondary;
+        background-color: $tertiary;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}
+
+.icon-left {
+    position: absolute;
+    left: -14px;
+    top: calc(50% - 10px);
+}
+
+// footer
+
+.footer {
+    &__link {
+        transition: all 500ms;
+        &:hover {
+            transform: scale(1.2);
+            text-shadow: 3px 3px 5px $secondary;
+        }
+    }
+}

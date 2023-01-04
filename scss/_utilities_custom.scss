@@ -1,0 +1,48 @@
+$utilities: () !default;
+
+$utilities: map-merge(
+    $utilities,
+    (
+        "font-size": (
+            property: font-size,
+            class: fs,
+            values: (
+                12: 12px,
+                14: 14px,
+                16: 16px,
+                18: 18px,
+                20: 20px,
+                22: 22px,
+                24: 24px
+            )
+    ),
+        "padding-top": (
+            responsive: true,
+            property: padding-top,
+            class: pt,
+            values: (
+                6: 50px,
+                7: 75px,
+                8: 100px,
+                9: 125px,
+                10: 150px,
+                11: 175px,
+                12: 200px
+            )
+      ),
+        "margin-bottom": (
+            responsive: true,
+            property: margin-bottom,
+            class: mb,
+            values: (
+                6: 50px,
+                7: 75px,
+                8: 100px,
+                9: 125px,
+                10: 150px,
+                11: 175px,
+                12: 200px
+            )
+      ),
+    )
+)
