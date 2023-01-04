@@ -10735,11 +10735,28 @@ header {
 }
 
 .pageLink {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
   text-decoration: none;
 }
+.pageLink:after {
+  content: "";
+  position: absolute;
+  background-color: #e04f5f;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -5px;
+  transition: all 0.3s;
+}
 .pageLink:hover {
-  text-decoration: underline;
+  color: #002d40;
   font-weight: bold;
+}
+.pageLink:hover:after {
+  width: 100%;
 }
 
 .timeline__item {

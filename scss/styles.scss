@@ -193,11 +193,28 @@ header {
 // }
 
 .pageLink {
+    width: fit-content;
+    position: relative;
     text-decoration: none;
 
+    &:after {
+        content: "";
+        position: absolute;
+        background-color: $quaternary;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: all 0.3s;
+    }
+
     &:hover {
-        text-decoration: underline;
+        color: $secondary;
         font-weight: bold;
+
+        &:after {
+            width: 100%;
+        }
     }
 }
 
