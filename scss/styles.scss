@@ -250,3 +250,13 @@ header {
         }
     }
 }
+
+.form-input {
+    border: 2px solid $secondary;
+    box-shadow: 3px 3px 5px $secondary;
+    background-color: $tertiary;
+}
+
+.form-btn {
+    box-shadow: 3px 3px 5px $secondary;
+}

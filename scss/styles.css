@@ -10814,4 +10814,14 @@ header {
 .footer__link:hover {
   transform: scale(1.2);
   text-shadow: 3px 3px 5px #002d40;
+}
+
+.form-input {
+  border: 2px solid #002d40;
+  box-shadow: 3px 3px 5px #002d40;
+  background-color: #d9ecf2;
+}
+
+.form-btn {
+  box-shadow: 3px 3px 5px #002d40;
 }/*# sourceMappingURL=styles.css.map */
