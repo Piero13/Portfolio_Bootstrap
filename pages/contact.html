@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="assets/favicon.ico" />
+
     <link rel="stylesheet" href="../scss/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
@@ -15,15 +17,15 @@
 </head>
 
 <body>
-    <header class="p-2">
-        <div class="p-0 navbar navbar-expand-md fixed-top text-light bg-gradient-db">
+    <header class="p-0">
+        <div class="p-2 navbar navbar-expand-md fixed-top text-light bg-gradient-db">
             <div class="container p-2">
                     <div class="col-1 p-0 logo">
-                        <img src="../assets/dev-logo.png" alt="">
+                        <img src="./assets/dev-logo.png" alt="">
                     </div>
                     <div class="col-9 title">
                         <h1 class="fs-20 my-0">Pierre Fasce</h1>
-                        <p class="my-0 fs-12">Développeur Web</p>
+                        <p class="my-0 fs-12">Développeur Web Front End</p>
                     </div>
 
                     <button class="hamMenu navbar-toggler col-2 m-0 p-1 fs-14 text-light border-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,19 +34,19 @@
         
                     <div class="collapse navbar-collapse justify-content-end my-3 p-2" id="navbarNav">
                         <ul class="navbar-nav fs-14 d-flex flex-column flex-md-row align-items-center">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <a href="../index.html" class="nav-link text-light">Accueil</a>
                             </li>
         
                             <li class="nav-item">
-                                <a href="projects.html" class="nav-link text-light">Projets</a>
+                                <a href="./pages/projects.html" class="nav-link text-light">Projets</a>
                             </li>
         
                             <li class="nav-item">
-                                <a href="career.html" class="nav-link text-light">Parcours</a>
+                                <a href="./pages/career.html" class="nav-link text-light">Parcours</a>
                             </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link text-light">Contact</a>
+                            <li class="nav-item active">
+                                <a href="./pages/contact.html" class="nav-link text-light">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -54,9 +56,74 @@
         </div>
     </header>
 
-    <main>
+    <main class="pt-11">
+        <section class="welcome bg-gradient-lb bd-primary mb-8 pt-7 pb-4 px-3">
+            <div class="welcome__inset bg-gradient-db d-flex justify-content-center align-items-center">
+                <h2 class="welcome__title m-0 fs-14 fw-bold text-light">Contact</h2>
+            </div>
 
+            <div class="welcome__text text-center text-secondary">
+                <h3 class="fs-16 w-100">Formulaire de contact</h3>
+
+                <p class="fs-14  mx-0 mb-4">
+                    Vous avez un projet de site internet personnel ou professionnel ? Le besoin d'améliorer votre site existant ? Une demande particulière ?<br><br>
+                    Je vous invite à me contacter via le formulaire ci-dessous. Je répondrai à toutes vos demandes. <br><br>
+                    À très bientôt !
+                </p>
+            </div>
+
+            <form class="contact__form w-100 px-4">
+                <div class="my-2 text-secondary">
+                    <label for="lastname" class="form-label w-100 m-0 fs-14 text-start" aria-required="true">Nom</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control fs-14" required>
+                </div>
+
+                <div class="my-2 text-secondary">
+                    <label for="firstname" class="form-label w-100 m-0 fs-14 text-start" aria-required="true">Prénom</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control fs-14" required>
+                </div>
+
+                <div class="my-2 text-secondary">
+                    <label for="email" class="form-label w-100 m-0 fs-14 text-start" aria-required="true">Email</label>
+                    <input type="email" name="email" id="email" class="form-control fs-14" required aria-describedby="emailHelp">
+                </div>
+
+                <div class="my-2 text-secondary">
+                    <label for="phone" class="form-label w-100 m-0 fs-14 text-start">Téléphone</label>
+                    <input type="tel" name="phone" id="phone" class="form-control fs-14">
+                </div>
+
+                <div class="my-2 text-secondary">
+                    <label for="subject" class="form-label w-100 m-0 fs-14 text-start">Objet du message</label>
+                    <input type="text" name="subject" id="subject" class="form-control fs-14">
+                </div>
+
+                <div class="my-2 text-secondary">
+                    <label for="message" class="form-label w-100 m-0 fs-14 text-start">Message</label>
+                    <textarea name="message" id="message" class="form-control fs-14" rows="10"></textarea>
+                </div>
+
+                <div class="mt-4 d-flex justify-content-center">
+                    <button type="submit" class="btn bg-gradient-db-reverse fs-14 text-light px-4">Envoyer</button>
+                </div>
+            </form>
+        </section>
     </main>
+
+    <footer class="footer p-3 text-light bg-gradient-db">
+        <!-- bloc-2.1 réseaux sociaux -->
+        <div class="container">
+            <div class="row text-center">
+                <a href="https://www.facebook.com/lemonpiero" class="footer__link col-3 fs-30 text-light" aria-label="lien vers facebook" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pf.creations13/" class="footer__link col-3 fs-30 text-light" aria-label="lien vers instagram" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/33651853051" class="footer__link col-3 fs-30 text-light" aria-label="lien vers whatsapp"><i class="fab fa-whatsapp" target="_blank" title="Whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/pierre-fasce-9a5a001a0/" class="footer__link  col-3 fs-30 text-light" aria-label="lien vers linkedin" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- bloc-2.2 copyright -->
+        <p class="footer__copyright mt-2 m-0 fs-14 text-center">@PFDW13 - 2023</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>

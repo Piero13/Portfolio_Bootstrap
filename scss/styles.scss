@@ -41,6 +41,10 @@ $quaternary: #e04f5f;
     @include bg-gradient-darkblue();
 }
 
+.bg-gradient-db-reverse {
+    @include bg-gradient-darkblue--reverse();
+}
+
 .bg-gradient-lb {
     @include bg-gradient-lightblue
 }
@@ -167,30 +171,6 @@ header {
         background-color: $quaternary;
     }
 }
-
-// .carousel-control-next, .carousel-control-prev {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 30px;
-//     height: 30px;
-//     background-color: $quaternary;
-//     border-radius: 50%;
-// }
-
-// .carousel-control-prev {
-//     left: 5%;
-//     top: calc(50% - 15px);
-// }
-
-// .carousel-control-next {
-//     right: 5%;
-//     top: calc(50% - 15px);
-// }
-
-// .carousel-control-next-icon, .carousel-control-prev-icon {
-//     height: 20px;
-// }
 
 .pageLink {
     width: fit-content;

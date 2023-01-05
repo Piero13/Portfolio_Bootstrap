@@ -10631,6 +10631,10 @@ textarea.form-control-lg {
   background: linear-gradient(to top left, #1aa6b7, #002d40);
 }
 
+.bg-gradient-db-reverse {
+  background: linear-gradient(to top left, #002d40, #1aa6b7);
+}
+
 .bg-gradient-lb {
   background: linear-gradient(to top left, rgba(26, 166, 183, 0.6666666667), rgba(217, 236, 242, 0.6666666667));
 }
