@@ -10688,6 +10688,9 @@ header {
   margin: 20px;
   text-decoration: none;
 }
+.nav-link.active {
+  border-bottom: 3px solid #e04f5f;
+}
 .nav-link:after {
   content: "";
   position: absolute;
@@ -10695,11 +10698,8 @@ header {
   height: 3px;
   width: 0;
   left: 0;
-  bottom: -5px;
+  bottom: -3px;
   transition: 0.3s;
-}
-.nav-link:hover {
-  color: #002d40;
 }
 .nav-link:hover:after {
   width: 100%;
