@@ -10824,4 +10824,9 @@ header {
 
 .form-btn {
   box-shadow: 3px 3px 5px #002d40;
+  transition: all 300ms;
+}
+.form-btn:hover {
+  box-shadow: none;
+  transform: scale(0.9);
 }/*# sourceMappingURL=styles.css.map */
