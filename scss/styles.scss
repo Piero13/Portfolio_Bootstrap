@@ -23,6 +23,10 @@ $quaternary: #e04f5f;
     background: linear-gradient(to top left, #1aa6b7aa, #d9ecf2aa);
 }
 
+@mixin bg-gradient-lightblue-op100 {
+    background: linear-gradient(to top left, #1aa6b7, #d9ecf2);
+}
+
 @mixin bg-gradient-red {
     background: linear-gradient(to top left, #8a2824, $quaternary);
 }
@@ -46,7 +50,11 @@ $quaternary: #e04f5f;
 }
 
 .bg-gradient-lb {
-    @include bg-gradient-lightblue
+    @include bg-gradient-lightblue();
+}
+
+.bg-gradient-lb-op100 {
+    @include bg-gradient-lightblue-op100();
 }
 
 .bd-primary {
@@ -214,7 +222,7 @@ header {
             position: absolute;
             z-index: 2;
             border-left: 2px solid $quaternary;
-            height: 104px;
+            height: 120px;
             left: calc(50% - 1px);
             top: calc(50% - 52px);
 
