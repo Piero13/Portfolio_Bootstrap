@@ -10993,6 +10993,10 @@ textarea.form-control-lg {
   border: 1px solid #002d40;
 }
 
+.bs-secondary {
+  box-shadow: 3px 3px 5px #002d40;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

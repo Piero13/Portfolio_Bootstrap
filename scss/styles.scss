@@ -65,6 +65,10 @@ $quaternary: #e04f5f;
     @include secondary-border();
 }
 
+.bs-secondary {
+    box-shadow: 3px 3px 5px $secondary;
+}
+
 // general styles
 
 * {
