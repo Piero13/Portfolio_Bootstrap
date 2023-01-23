@@ -10997,6 +10997,14 @@ textarea.form-control-lg {
   box-shadow: 3px 3px 5px #002d40;
 }
 
+.icon-link {
+  transition: all 500ms;
+}
+.icon-link:hover {
+  transform: scale(1.2);
+  text-shadow: 3px 3px 5px #002d40;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

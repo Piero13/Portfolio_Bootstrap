@@ -69,6 +69,14 @@ $quaternary: #e04f5f;
     box-shadow: 3px 3px 5px $secondary;
 }
 
+.icon-link {
+    transition: all 500ms;
+    
+    &:hover {
+        transform: scale(1.2);
+        text-shadow: 3px 3px 5px $secondary;
+    }
+}
 // general styles
 
 * {
