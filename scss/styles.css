@@ -11114,6 +11114,7 @@ header {
   width: fit-content;
   position: relative;
   text-decoration: none;
+  color: #002d40;
 }
 .pageLink:after {
   content: "";
