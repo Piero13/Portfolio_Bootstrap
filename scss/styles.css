@@ -11005,6 +11005,15 @@ textarea.form-control-lg {
   text-shadow: 3px 3px 5px #002d40;
 }
 
+.img-tools {
+  height: 30px;
+  transition: transform 500ms;
+}
+.img-tools:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(3px 3px 5px #002d40);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

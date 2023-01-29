@@ -77,6 +77,17 @@ $quaternary: #e04f5f;
         text-shadow: 3px 3px 5px $secondary;
     }
 }
+
+.img-tools {
+    height: 30px;
+    transition: transform 500ms;
+
+    &:hover {
+        transform: scale(1.2);
+        filter: drop-shadow(3px 3px 5px $secondary);
+    }
+}
+
 // general styles
 
 * {
