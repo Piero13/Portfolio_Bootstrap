@@ -75,6 +75,7 @@ $quaternary: #e04f5f;
     &:hover {
         transform: scale(1.2);
         text-shadow: 3px 3px 5px $secondary;
+        cursor: pointer;
     }
 }
 
@@ -85,6 +86,7 @@ $quaternary: #e04f5f;
     &:hover {
         transform: scale(1.2);
         filter: drop-shadow(3px 3px 5px $secondary);
+        cursor: pointer;
     }
 }
 
